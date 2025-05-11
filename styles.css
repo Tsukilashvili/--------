@@ -480,6 +480,10 @@ footer p {
         gap: 10px;
     }
 
+    .hero img {
+        display:none
+    }
+
     .nav-links li {
         margin: 5px 0;
     }
