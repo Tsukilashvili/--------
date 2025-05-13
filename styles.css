@@ -469,10 +469,14 @@ footer p {
 
 
 @media (max-width: 480px) {
-         .navbar {
+    .navbar {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+    }
+
+    #home img {
+        display: none;
     }
 
     .nav-links {
@@ -568,7 +572,7 @@ footer p {
         height: 120px;
     }
 
-        .testimonial-container {
+    .testimonial-container {
         flex-direction: column;
         gap: 20px;
     }
@@ -583,7 +587,7 @@ footer p {
         height: 70px;
     }
 
-        .newsletter-form {
+    .newsletter-form {
         flex-direction: column;
         align-items: center;
     }
@@ -598,7 +602,7 @@ footer p {
         margin-top: 20px;
     }
 
-        footer {
+    footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
