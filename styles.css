@@ -136,9 +136,17 @@ body {
 .hero img {
     max-width: 80%;
     /* სურათის ზომა */
-    height: auto;
-    margin-left: 20px;
+   margin-left: 20px;
+    height:auto;
+    
 }
+
+@media (max-width: 480px) {
+    .hero img {
+        display: none !important;
+    }
+}
+
 
 .hero h1 {
     font-size: 2.5rem;
@@ -482,6 +490,10 @@ footer p {
     .nav-links {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .hero img {
+        display:none
     }
 
     .nav-links li {
