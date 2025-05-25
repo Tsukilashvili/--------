@@ -14,37 +14,32 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     line-height: 1.6;
-    color: #333;
+    color: var(--secondary-color);
     text-align: center;
-
 }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #ff6600;
-    ;
+    color: var(--primary-color);
 }
 
 .logo span.lab {
-    color: black
+    color: black;
 }
-
 
 .logo:hover {
     transform: scale(1.1);
-
 }
-
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: var(--background-light);
 }
 
 .nav-links {
@@ -58,7 +53,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: var(--secondary-color);
 }
 
 .nav-links a:hover {
@@ -69,18 +64,18 @@ body {
     margin-left: 10px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--button-radius);
     cursor: pointer;
 }
 
 .login-btn {
     background-color: #fff;
-    border: 1px solid #333;
+    border: 1px solid var(--secondary-color);
     text-align: center;
 }
 
 .signup-btn {
-    background-color: #ff6600;
+    background-color: var(--primary-color);
     color: #fff;
     text-align: center;
 }
@@ -97,14 +92,14 @@ body {
 
 .growth-section h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
 .animated-bar {
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, #ff6600, #333);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     background-size: 200% 100%;
     animation: slide 3s linear infinite;
 }
@@ -119,13 +114,12 @@ body {
     }
 }
 
-
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #f9f9f9;
+    background-color: var(--background-light);
     flex-direction: row;
 }
 
@@ -135,10 +129,8 @@ body {
 
 .hero img {
     max-width: 80%;
-    /* სურათის ზომა */
-   margin-left: 20px;
-    height:auto;
-    
+    margin-left: 20px;
+    height: auto;
 }
 
 @media (max-width: 480px) {
@@ -147,36 +139,28 @@ body {
     }
 }
 
-
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #0B1B35;
+    color: var(--text-dark);
 }
 
 .hero-buttons button {
     margin-right: 10px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--button-radius);
     cursor: pointer;
-
 }
-
-
-
-
 
 .get-started-btn {
-    background-color: #ff6600;
+    background-color: var(--primary-color);
     color: #fff;
-
 }
-
 
 .learn-more-btn {
     background-color: #fff;
-    border: 1px solid #333;
+    border: 1px solid var(--secondary-color);
 }
 
 .hero-buttons button:hover {
@@ -184,7 +168,6 @@ body {
 }
 
 .services {
-    /* ეს არის ბარათები,გრაფიკული დიზაინი,მონთაჟი,მარკეტინი */
     padding: 20px;
     margin: 0;
     background-color: #fff;
@@ -201,8 +184,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
 .service-cards {
     display: flex;
     justify-content: center;
@@ -215,7 +196,7 @@ body {
     flex: 1 1 28%;
     max-width: 300px;
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: var(--background-light);
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -224,7 +205,6 @@ body {
 
 .card img {
     max-width: 100%;
-
     height: auto;
     border-radius: 10px;
 }
@@ -242,18 +222,16 @@ body {
 .card button {
     margin-top: 10px;
     padding: 12px 25px;
-    background-color: #ff6600;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--button-radius);
     cursor: pointer;
 }
 
-
-
 .team {
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: var(--background-light);
     text-align: center;
 }
 
@@ -275,7 +253,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .member-photo {
@@ -301,7 +278,6 @@ body {
     transform: scale(1.1);
 }
 
-
 .newsletter {
     padding: 50px;
     background-color: #fff;
@@ -325,27 +301,23 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: var(--button-radius);
     width: 250px;
 }
 
 .newsletter-form button {
     padding: 10px 20px;
-    background-color: #ff6600;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--button-radius);
     cursor: pointer;
-
 }
-
 
 .newsletter-form p {
     font-size: 1rem;
     color: #555;
     margin-top: 20px;
-    /* ტექსტისთვის სივრცეე*/
-
 }
 
 .newsletter-form img {
@@ -358,12 +330,12 @@ footer {
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-light);
+    color: var(--secondary-color);
 }
 
 .footer-logo .orange-text {
-    color: #ff6600;
+    color: var(--primary-color);
 }
 
 .footer-logo .black-text {
@@ -378,7 +350,6 @@ footer h2 {
 footer p {
     margin-left: 100px;
     font-size: 0.9rem;
-
 }
 
 .footer-divider {
@@ -391,7 +362,7 @@ footer p {
 .footer-text p {
     text-align: left;
     font-size: 12px;
-    color: #151439
+    color: #151439;
 }
 
 .footer-right {
@@ -419,13 +390,11 @@ footer p {
     transition: color 0.3s ease;
 }
 
-
 /* ძირითადი სექციის სტილი */
 .testimonials {
     padding: 50px;
-    background-color: #f9f9f9;
+    background-color: var(--background-light);
     text-align: center;
-
 }
 
 .testimonials h2 {
@@ -441,7 +410,7 @@ footer p {
     gap: 20px;
 }
 
-/* თითო testimonial ბლოკის სტილი  დამღალააა*/
+/* თითო testimonial ბლოკის სტილი */
 .testimonial {
     flex: 1 1 calc(45% - 20px);
     background-color: #fff;
@@ -450,7 +419,6 @@ footer p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 300px;
-
 }
 
 .testimonial img {
@@ -468,13 +436,9 @@ footer p {
 
 .testimonial h3 {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--secondary-color);
     font-weight: bold;
 }
-
-
-
-
 
 @media (max-width: 480px) {
     .navbar {
@@ -493,7 +457,7 @@ footer p {
     }
 
     .hero img {
-        display:none
+        display: none;
     }
 
     .nav-links li {
@@ -557,7 +521,6 @@ footer p {
         height: auto;
         margin: 0 auto;
     }
-
 
     .card h3 {
         margin-top: 2px;
